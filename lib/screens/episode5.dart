@@ -1,13 +1,13 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class Episode5 extends StatelessWidget {
   Episode5({Key? key}) : super(key: key);
 
-  Color color1 = Color.fromRGBO(124, 220, 149, 1);
-  Color color2 = Color.fromRGBO(33, 207, 184, 1);
-  Color backgroundColor = Color.fromRGBO(241, 240, 246, 1);
+  final Color color1 = Color.fromRGBO(124, 220, 149, 1);
+  final Color color2 = Color.fromRGBO(33, 207, 184, 1);
+  final Color backgroundColor = Color.fromRGBO(241, 240, 246, 1);
 
   Container circle() {
     return Container(
@@ -93,7 +93,8 @@ class Episode5 extends StatelessWidget {
                       borderRadius: BorderRadius.circular(5),
                     ),
                     child: Text(
-                      "Payday in a week",
+                      AppLocalizations.of(context)!.paydayInAWeek,
+                      // AppLocalizations.of(context)!.payday_in_a_week,
                       style: TextStyle(
                         color: color2,
                         fontSize: 12,

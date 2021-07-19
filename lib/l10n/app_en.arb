@@ -1,0 +1,6 @@
+{
+    "paydayInAWeek": "Payday in a week",
+    "@paydayInAWeek": {
+      "description": "Click to view stats of payday"
+    }
+}

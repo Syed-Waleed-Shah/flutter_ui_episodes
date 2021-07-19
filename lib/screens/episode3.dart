@@ -6,7 +6,7 @@ class Episode3 extends StatelessWidget {
   Episode3({Key? key}) : super(key: key);
 
   // First of all lets create primary color (some darkish green in this UI)
-  Color primaryColor = Color.fromRGBO(0, 178, 95, 1);
+  final Color primaryColor = Color.fromRGBO(0, 178, 95, 1);
 
   @override
   Widget build(BuildContext context) {
